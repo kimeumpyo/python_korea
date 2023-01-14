@@ -21,8 +21,8 @@
 # a = int(input('숫자를 지정해주세요:'))
 # b = int(input('몇배수의 숫자를 출력할지 적어주세요:'))
 # i = b 
-# while i <= 100:
-#     if i % b == 0:
+# while i <= a :
+#     if i % b == 0 :
 #         print(i,'번쨰 Hello')
 #     i += 1          
 # print('=======')
@@ -39,10 +39,31 @@
 m = int(input('지불한 금액을 적어주세요:'))
 cf = int(input('커피값을 입력해주세요:'))
 i = 1
+<<<<<<< HEAD
 
 while i * cf < m : 
     e = m - (i * cf)
     print('커피',i,'잔, 잔돈',e,'원')
     i += 1     
 print ('==================')
+=======
+
+while i * cf < m : 
+    e = m - (i * cf)
+    print('커피',i,'잔, 잔돈',e,'원')
+    i += 1     
+print ('==================')
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 386ef70ac026cbe07339e7f489740a18addf194b
 
