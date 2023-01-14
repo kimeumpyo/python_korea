@@ -7,8 +7,9 @@
 # 4번째 Hello
 # 5번째 Hello
 
-# i = 1
+
 # a = int(input('몇번까지 반복할지 입력해주세요:'))
+# i = 1
 # while i <= a:
 #     print(i,'번쨰 Hello')
 #     i += 1
@@ -23,7 +24,7 @@
 # i = b 
 # while i <= a :
 #     if i % b == 0 :
-#         print(i,'번쨰 Hello')
+#         print(i,'번째 Hello')
 #     i += 1          
 # print('=======')
 
@@ -36,6 +37,8 @@
 # 커피 3잔, 잔돈 500원
 # 커피 4잔, 잔돈 200원
 
+
+# 풀이1
 m = int(input('지불한 금액을 적어주세요:'))
 cf = int(input('커피값을 입력해주세요:'))
 i = 1
@@ -44,6 +47,18 @@ while i * cf < m :
     e = m - (i * cf)
     print('커피',i,'잔, 잔돈',e,'원')
     i += 1     
+print ('=================')
+
+# 풀이2
+price = 300
+금액 = int(input('금액은 얼마인가요>>'))
+커피잔수 = 0
+
+#회수로써 i = 0, 범위로써 금액 >= price
+while  금액 >= price:
+    금액 -= price
+    커피잔수 += 1
+    print('커피',커피잔수,'잔,잔돈',금액,'원')
 print ('=================')
 
 
