@@ -11,7 +11,4 @@
 
 # 리스트를 분할해보자
 for i in 리스트:
-    print(i)
-
-
-
+    print(i) 

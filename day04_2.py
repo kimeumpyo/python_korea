@@ -30,6 +30,10 @@ print(abcd)
 abcd.insert(2, 2222)
 print(abcd) 
 
+# 수정
+abcd[4] = 567
+print(abcd)
+
 # 제거 remove (해당 데이터를 제거후 다시 땡겨온다.)
 abcd.remove(2222)
 print(abcd)
@@ -52,9 +56,11 @@ print(abcd)
 abcd.reverse()
 print(abcd)
 
-# count
-십의갯수 =  abcd.count(10)
+# 특정 데이터의 갯수 count
+십의갯수 = abcd.count(10)
+전체갯수 = len(abcd)
 print(십의갯수)
+print('전체 데이터의 갯수를 확인',전체갯수)
 
 # 리스트 정렬 sort  # 기본적으로 낮은 순부터 정렬 (추가적인 규칙도 가능하다.)
 abcd.sort()
@@ -63,4 +69,4 @@ print(abcd)
 # 현재 리스트를 보존하면서 테스트를 하고 싶다
 test_abcd = abcd.copy()
 print('기존 리스트를 보존하면서 복붙을 만듭니다:',test_abcd)
-print(abcd)
+print(abcd) 
