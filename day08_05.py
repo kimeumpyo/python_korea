@@ -16,13 +16,19 @@ cv2.putText(im_man,'eumpyo', (0,20), cv2.FONT_HERSHEY_PLAIN, 2,(0, 0, 255), 1)
 
 
 
+
 vd_man = cv2.VideoCapture('man.mp4')
 
-cv2.putText(vd_man,'eumpyo', (0,20), cv2.FONT_HERSHEY_PLAIN, 2,(0, 0, 255), 1)
-cv2.resize(vd_man, [460,960])
-vd_man.read()
-cv2.imshow('title',vd_man)
-cv2.waitKey(0)
+while True:
+    success, img = vd_man.read()
+    if success:
+        cv2.resize(img, (460,960))
+        cv2.putText(img,'eumpyo', (0,20), cv2.FONT_HERSHEY_PLAIN, 2,(0, 0, 255), 1)
+        cv2.imshow('title',img)
+    if cv2.waitKey(20) & 0xFf == 27:
+        break
+
+
 
 
 
